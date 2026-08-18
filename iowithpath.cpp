@@ -6,10 +6,10 @@ using namespace std;
 int main()
 {
     //deklarasi variabel baris dan NamaFile
-    string bairs, NamaFile;
+    string baris, NamaFile;
 
     //membuat input untuk menangkap nama file
-    cout << "Masukkan Nama File : ";
+    cout << "Masukkan Nama file : ";
     cin >> NamaFile;
 
     //membuat file dalam mode menulis
@@ -39,7 +39,7 @@ int main()
     //menunjuk ke sebuah file dengan ekstensi .txt
     infile.open(NamaFile + ".txt", ios::in);
 
-    cout << endl << ">= Membuka dan Membaca File" << endl;
+    cout << endl << ">= Membuka dan Membaca file" << endl;
     //kondisi jika file ada
     if (infile.is_open())
     {
@@ -52,6 +52,6 @@ int main()
         infile.close();
     }
     //kondisi jika file tidak ada
-    else cout << "Unable to open File";
+    else cout << "Unable to open file";
     return 0;
 }
