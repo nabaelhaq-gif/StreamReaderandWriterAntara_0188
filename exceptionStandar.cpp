@@ -18,4 +18,6 @@ int main()
     {
         cout << e.what() << endl;
     }
+    cout << "Baris Program Terakhir" << endl; //penanda 2
+    return 0;
 }
