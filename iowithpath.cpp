@@ -40,4 +40,15 @@ int main()
     infile.open(NamaFile + ".txt", ios::in);
 
     cout << endl << ">= Membuka dan Membaca File" << endl;
+    //kondisi jika file ada
+    if (infile.is_open())
+    {
+        //perulangan untuk menampilkan setiap baris
+        while (getline(infile, baris))
+        {
+            cout << baris << endl;
+        }
+        //menutup file jika telah selesai di loop
+        infile.close();
+    }
 }
