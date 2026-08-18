@@ -13,4 +13,9 @@ int main()
         //memanggil array element ke 5 yang berarti akan terjadi error
         cout << data.at(3) << endl;
     }
+    //kondisi jika terjadi error didalam try
+    catch (exception& e)
+    {
+        cout << e.what() << endl;
+    }
 }
